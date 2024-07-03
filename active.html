@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form-Validation</title>
+  <link rel="stylesheet" href="active.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="project">
+    <h3 class="sign">Sign in to your account</h3>
+
+    <div class="sectionA">
+    <label for="email" id="address">Email address</label>
+    <div class="sectionA1">
+     <input type="text" id="email" onkeyup="validation()">
+     <p id="text"></p>
+     
+    </div>
+ </div>
+
+ <div class="sectionB">
+<label for="password" id="pass">Password</label>
+<div class="sectionB1" id="section">
+   <input type="password" id="password" onkeyup="valid()">
+   <h4 id="show">Show password</h4>
+</div>
+    <p id="required"></p>
+ </div>
+
+    <h4 id="forgotpassword" class="forgot">Forgot password</h4>
+
+    <button id="submit">Submit</button>
+    <div class="loader"></div>
+    
+  </div>
+  <script src="active.js"></script>
+</body>
+</html>

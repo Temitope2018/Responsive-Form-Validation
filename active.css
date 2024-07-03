@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(255, 255, 255, 0.774);
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7em;
+}
+.project{
+    width: 70%;
+    max-width: 400px;
+    background-color: white;
+}
+@media (max-width:450px){
+    .project{
+        width: 95%;
+    }
+}
+.sign{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    font-weight: 700;
+}
+.sectionA,.sectionB{
+    margin:1.5em 0 0 1em;
+
+}
+#address,#pass,#forgotpassword{
+    letter-spacing: .4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+}
+.sectionA1{
+    margin-top: .5em;
+}
+#email{
+    width: 90%;
+    padding: .5em 1em;
+    border-radius: 6px;
+    font-size: 1.02rem;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.966);
+}
+@media (max-width:400px){
+    #email{
+        border: 1px solid rgba(0, 0, 0, 0.966);
+        width: 95%;
+    }
+}
+#text,#required{
+    margin-top: .7em;
+    color: red;
+    letter-spacing: .7px;
+    font-family: sans-serif;
+    font-size: .9rem;
+    font-weight: 300;
+    }
+    #invalid{
+    color: red;
+    letter-spacing: .7px;
+    font-family: sans-serif;
+    font-size: .9rem;
+    font-weight: 300;
+    display: none;
+    }
+    .angle{
+        margin-right: .3em;
+        font-weight: bold;
+    }
+    .sectionB1{
+        display: flex;
+        justify-content: space-around;
+        margin-top: .5em;
+        width: 90%;
+        border-radius: 6px;
+        border: 2px solid rgba(0, 0, 0, 0.966);
+        }
+        @media(max-width:400px){
+            .sectionB1{
+                width: 95%;
+            }
+        }
+        #password{
+            width: 60%;
+            padding: .4em 1em;
+            font-size: 1.1rem;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            outline: none;
+            border: none;
+            background-color: transparent;
+        }
+        #show{
+            align-self: center;
+            letter-spacing: .5px;
+            font-size: .85rem;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        @media(max-width:400px){
+            #show{
+                position: relative;
+                right: 10px;
+            }
+        }
+        .forgot{
+            margin:1em 0 0 1em ;
+            cursor: pointer;
+        }
+        #submit{
+            display: flex;
+            justify-content: center;
+            margin: 3em 0 0 1em;
+            padding: .9em 0;
+            width: 90%;
+            background-color: rgba(0, 0, 20, 0.849);
+            color: white;
+            letter-spacing: .5px;
+            font-weight: 500;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #submit:active{
+            color: rgba(255, 255, 255, 0.692);
+        }
+        .loader{
+            position: relative;
+            bottom: 28px;
+            left: 140px;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            visibility: hidden;
+        }
+        .loader::after{
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border: 3px solid white;
+            border-top-color: grey;
+            animation: loading 0.75s ease infinite;
+            
+        }
+        @keyframes loading{
+            from{
+                transform: rotate(0turn);
+            }
+            to{
+                transform:rotate(1turn)
+            }
+        }
+        .loader2{
+            visibility: hidden;
+            opacity: 0;
+        }
+        
+    
+
